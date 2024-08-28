@@ -1,0 +1,140 @@
+@import url(https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap);
+
+@import url(https://fonts.googleapis.com/css2?family=Fondamento&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main img {
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+}
+
+.main h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 96px;
+    font-weight: 900;
+    width: 200px;
+    line-height: 120%;
+    color: red;
+}
+
+
+.div {
+    font-family: 'Fondamento', handwriting;
+    width: 450px;
+    transform: translateX(-120px) translateY(100px);
+    background: white;
+    padding: 20px;
+}
+
+.div h1 {
+    font-size: 45px;
+    padding-top: 20px;
+    color: red;
+}
+
+.div p {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.div span {
+    font-size: 25px;
+}
+
+.div button {
+    width: 180px;
+    display: block;
+    height: 45px;
+    background: red;
+    color: white;
+    border: none;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.courses {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.courses img {
+    object-fit: cover;
+    width: 800px;
+    height: 500px;
+}
+
+.div1 {
+    width: 250px;
+    height: 250px;
+    border: solid 45px red;
+    transform: translateX(100%) translateY(-50%);
+    background: transparent;
+    border-radius: 50%;
+}
+
+@media screen and (max-width:1033px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main h1 {
+        width: 100%;
+    }
+
+    .div {
+        transform: translateY(300px) translateX(-60%);
+    }
+}
+
+@media screen and (max-width:867px) {
+    .div1 {
+        transform: translateX(10%);
+    }
+    .courses {
+        flex-direction: column;
+    }
+    .courses .div {
+        width: 500px ;
+        transform: translate(0px) translateY(-100px);
+        z-index: 3;
+        position: relative;
+    }
+    .div1 {
+        transform: translateY(-360px) translateX(50px);
+    }
+}
+@media screen and (max-width:800px) {
+.courses img {
+    width: 100%;
+}
+}
+@media screen and (max-width:520px) {
+.main h1 {
+    font-size: 40px;
+    width: 90%;
+    margin: auto;
+}
+.main img {
+    width: 90%;
+    height: auto;
+    aspect-ratio: 1;
+}
+.div1 {
+    width: 100%;
+}
+}
